@@ -61,18 +61,19 @@ spring.datasource.url=jdbc:postgresql://localhost:5432/inventory_db
 spring.datasource.username=your_username
 spring.datasource.password=your_password
 
-3.Run the project
-You can use your IDE or run:
--mvn spring-boot:run
+3. Run the project  
+You can use your IDE or run:  
+mvn spring-boot:run
 
-4.Test with Postman
--Use Basic Auth for protected routes.
--Register user → Log in → Use credentials to access secured endpoints.
+4. Test with Postman  
+- Use Basic Auth for protected routes.  
+- Register user → Log in → Use credentials to access secured endpoints.
 
-📸 Sample Roles
-Default roles: USER, ADMIN
+📸 Sample Roles  
+Default roles: USER, ADMIN  
 These can be assigned when registering or programmatically.
 
-🧑‍💻 Author
+🧑‍💻 Author  
 Saurab Budhathoki
+
 
