@@ -44,36 +44,33 @@ A role-based Inventory Management backend system built using **Java**, **Spring 
 - `GET /api/products` – Get products (User sees their own, Admin sees all)
 - `PUT /api/products/{id}` – Update product
 - `DELETE /api/products/{id}` – Delete product
-- 
+  
 
 ## 🛠 Setup Instructions
 
 1. **Clone the repository**  
-git clone https://github.com/sauravbudhathoki/inventory-management.git
-cd inventory-management
-
-
-
+   git clone https://github.com/sauravbudhathoki/inventory-management.git  
+   cd inventory-management  
 2. **Configure PostgreSQL**  
-Create a database (e.g., `inventory_db`) and update your `application.properties`:
-```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/inventory_db
-spring.datasource.username=your_username
-spring.datasource.password=your_password
+   Create a database (e.g., `inventory_db`) and update your `application.properties`:
 
-3. Run the project  
-You can use your IDE or run:  
-mvn spring-boot:run
+   spring.datasource.url=jdbc:postgresql://localhost:5432/inventory_db  
+   spring.datasource.username=your_username  
+   spring.datasource.password=your_password
+   
+4. **Run the project**  
+   You can use your IDE or run:  
+   mvn spring-boot:run  
+5. **Test with Postman**  
+   - Use Basic Auth for protected routes.  
+   - Register user → Log in → Use credentials to access secured endpoints.
 
-4. Test with Postman  
-- Use Basic Auth for protected routes.  
-- Register user → Log in → Use credentials to access secured endpoints.
-
-📸 Sample Roles  
+**📸 Sample Roles**  
 Default roles: USER, ADMIN  
 These can be assigned when registering or programmatically.
 
-🧑‍💻 Author  
+**🧑‍💻 Author**  
 Saurab Budhathoki
+
 
 
